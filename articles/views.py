@@ -11,7 +11,7 @@ def create(request):
     content = request.GET.get('content')
 
     question = Question()
-    quest.user = user
+    question.user = user
     question.title = title
     question.content = content
     question.save()

@@ -1,4 +1,9 @@
 {% extends 'base.html'%}
 {% block body %}
-  {{questions}}
+  {% for question in questions %}
+  <h1>{{question.title}}</h1>
+  <h1>{{question.user}}</h1>
+  <h1>{{question.content}}</h1>
+  <hr>
+  {% endfor %}
 {% endblock %}
