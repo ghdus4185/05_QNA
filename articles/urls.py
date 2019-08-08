@@ -6,4 +6,5 @@ urlpatterns = [
     path('new/', views.new),
     path('create/', views.create),
     #read 전체 게시물 읽는 것만 만든다
+    path('', views.index),
 ]
